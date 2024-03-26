@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - eCommerce Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <div class="-ml-2 mr-2 flex items-center">
+              <a href="/" class="text-lg font-semibold text-gray-900"
+                >eCommerce Store</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Checkout Form -->
+    <div class="container mx-auto mt-10">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-3/4 mr-2 bg-white p-5 shadow-md">
+          <h2 class="text-2xl font-bold mb-6">Checkout</h2>
+          <form>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2"
+                >Shipping Address</label
+              >
+              <input
+                type="text"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="address"
+                placeholder="123 Main St"
+                required
+              />
+            </div>
+            <!-- Additional fields like city, state, zip, country, etc. -->
+            <!-- <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2"
+                >Payment Details</label
+              >
+              <div class="p-4 bg-gray-100 rounded-lg">
+                Payment form elements go here. (Integration with a payment
+                gateway is not required)
+              </div>
+            </div> -->
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Place Order
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="md:w-1/4 ml-2 bg-white p-5 shadow-md">
+          <h3 class="text-xl font-bold mb-4">Your Order</h3>
+          <!-- Summary of the cart items -->
+          <div class="mb-2">
+            <span class="text-gray-600">Product Name x 1</span>
+            <span class="float-right">£Price</span>
+          </div>
+          <!-- Repeat for each product -->
+          <div class="border-t mt-4">
+            <div class="flex justify-between mt-4">
+              <span class="font-bold text-lg">Total</span>
+              <span class="font-bold text-lg">£Total Price</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow">
+      <div class="container mx-auto px-5 py-6">
+        <p class="text-gray-500 text-sm text-center">
+          © 2024 eCommerce Store. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
